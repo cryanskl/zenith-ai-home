@@ -1,0 +1,11 @@
+node_modules
+dist
+.env
+.env.*
+*.log
+.DS_Store
+.vite
+coverage
+
+# One-off verification artifacts emitted by scripts/render-check.mjs and scripts/qa-check.mjs
+scripts/*.html
