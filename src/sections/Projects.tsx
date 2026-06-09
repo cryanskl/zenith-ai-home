@@ -25,14 +25,24 @@ export function Projects({ projects }: Props) {
       </header>
 
       <div className="project-grid">
-        {projects.map((project) => {
+        {projects.map((project, index) => {
           const realLinks = (project.links ?? []).filter((l) =>
             isRealHref(l.href),
           );
+          const isFeatured = index === 0;
+
           return (
-            <article className="project-card" key={project.title}>
-              <h3 className="project-title">{project.title}</h3>
-              <p className="project-summary">{project.summary}</p>
+            <article
+              className={isFeatured ? 'project-card project-card-featured' : 'project-card'}
+              key={project.title}
+            >
+              <div className="project-card-head">
+                <p className="project-card-kicker">
+                  {isFeatured ? 'Primary evidence' : 'Supporting record'}
+                </p>
+                <h3 className="project-title">{project.title}</h3>
+                <p className="project-summary">{project.summary}</p>
+              </div>
 
               <dl className="project-meta">
                 <div>

@@ -68,11 +68,11 @@ try {
   const mustContain = [
     'Zenith', // profile.name
     'AI Engineering Fieldnotes', // profile.title
-    'Featured AI Projects',
-    'Timeline',
-    'Recommended Prompts',
-    'Technical Insights',
-    'Recommended Reading',
+    'AI 工程实践',
+    '关键经历证据链',
+    '可复用 Prompt',
+    '技术判断',
+    '长期阅读',
     '项目复盘', // prompts[0].scenario
     'Prompt 结构化改写', // prompts[1].scenario
     '问题', '方法', '技术栈', '证据', // projects dl labels

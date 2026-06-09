@@ -8,9 +8,8 @@ export function Prompts({ prompts }: Props) {
   return (
     <section className="section" id="prompts" aria-labelledby="prompts-title">
       <header className="section-header">
-        <p className="section-eyebrow">03 · Recommended Prompts</p>
         <h2 className="section-title" id="prompts-title">
-          推荐提示词
+          可复用 Prompt
         </h2>
         <p className="section-subtitle">
           按场景组织，每条都说明「为什么有效」和「变量怎么替换」。
@@ -33,7 +32,7 @@ export function Prompts({ prompts }: Props) {
               {p.whyItWorks}
             </p>
 
-            <p className="prompt-vars">
+            <div className="prompt-vars">
               <span className="prompt-label">变量</span>
               <ul className="tag-list">
                 {p.variables.map((v) => (
@@ -42,7 +41,7 @@ export function Prompts({ prompts }: Props) {
                   </li>
                 ))}
               </ul>
-            </p>
+            </div>
           </article>
         ))}
       </div>

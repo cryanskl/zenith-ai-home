@@ -15,9 +15,8 @@ export function Reading({ reading }: Props) {
   return (
     <section className="section" id="reading" aria-labelledby="reading-title">
       <header className="section-header">
-        <p className="section-eyebrow">05 · Recommended Reading</p>
         <h2 className="section-title" id="reading-title">
-          推荐阅读
+          长期阅读
         </h2>
         <p className="section-subtitle">
           长期 curated list：每一条都说明「为什么保留」，不追每日热点。
@@ -46,7 +45,7 @@ export function Reading({ reading }: Props) {
                 >
                   {inner}
                   <span className="reading-arrow" aria-hidden="true">
-                    ↗
+                    Open
                   </span>
                 </a>
               ) : (

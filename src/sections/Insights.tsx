@@ -15,9 +15,8 @@ export function Insights({ insights }: Props) {
   return (
     <section className="section" id="insights" aria-labelledby="insights-title">
       <header className="section-header">
-        <p className="section-eyebrow">04 · Technical Insights</p>
         <h2 className="section-title" id="insights-title">
-          技术见解
+          技术判断
         </h2>
         <p className="section-subtitle">
           关注的是技术判断，而不是博客摘要。只有当文章已经发表，才展示链接。
@@ -49,7 +48,7 @@ export function Insights({ insights }: Props) {
                 >
                   {inner}
                   <span className="insight-arrow" aria-hidden="true">
-                    ↗
+                    Open
                   </span>
                 </a>
               ) : (

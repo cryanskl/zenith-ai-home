@@ -16,7 +16,6 @@ export function Contact({ profile }: Props) {
   return (
     <footer className="contact" id="contact">
       <div className="contact-body">
-        <p className="contact-eyebrow">06 · Contact</p>
         <h2 className="contact-title">联系 / 后续</h2>
 
         {realLinks.length > 0 ? (
